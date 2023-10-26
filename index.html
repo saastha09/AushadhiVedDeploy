@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aushadhi Ved</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500&family=Dosis:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+   <script src="index.js" defer></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="#" class="logo"><img src="image/logo.svg" alt="AushadhiVed" ></a>
+
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="#">Home</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search here..." />
+      </div>
+    </nav>
+
+    <div class="Homepage">
+      <p class="heading">Welcome to the <br>Aushadhi Ved</p>
+      <p class="description">Identify medical plants with image recognition</p>
+
+      <form class="img-input" action="your-url-here" method="post" enctype="multipart/form-data">
+        <label for="imageInput" class="custom-file-upload">
+            <div class="file-box">
+                <span>Upload an Image</span>
+                <i class="uil uil-image-upload uil-image-upload" id="ImageuploadIcon"></i>
+            </div>
+        </label>
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="submit">Identify</button>
+    </form>
+    </div>
+
+  </body>
+</html>
